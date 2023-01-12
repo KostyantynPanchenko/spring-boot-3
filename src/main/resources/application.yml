@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: The Very First Spring Boot 3 App
+  jpa:
+    open-in-view: false
+  h2:
+    console:
+      enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+  endpoint:
+    info:
+      enabled: true
+    health:
+      enabled: true
