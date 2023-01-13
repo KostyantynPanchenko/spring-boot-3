@@ -5,9 +5,12 @@
 * [Spring Boot 3.0 Goes GA](https://spring.io/blog/2022/11/24/spring-boot-3-0-goes-ga)
 * [Spring Boot 3.0 Release Notes](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Release-Notes)
 * [Spring Boot 3.0 Migration Guide](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Migration-Guide)
+* [Observability with Spring Boot 3](https://spring.io/blog/2022/10/12/observability-with-spring-boot-3)
 * [What's New in Spring Framework 6.x](https://github.com/spring-projects/spring-framework/wiki/What's-New-in-Spring-Framework-6.x)
 * [Free fake API for testing and prototyping](https://jsonplaceholder.typicode.com/)
 * [YouTube - What’s new in Spring Framework 6 and Spring Boot 3.0](https://www.youtube.com/watch?v=TR254zh-f3c)
+* [Tracing in Spring Boot 3 WebFlux](https://betterprogramming.pub/tracing-in-spring-boot-3-webflux-d432d0c78d3e)
+* [Datasource Micrometer](https://github.com/jdbc-observations/datasource-micrometer)
 
 ### Reference Documentation
 
