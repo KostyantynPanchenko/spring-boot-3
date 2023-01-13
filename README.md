@@ -1,9 +1,15 @@
 # Spring Boot 3 - The Playground
 
 ## Do not forget
-Launch local instance of Zipkin
-* `java -jar zipkin.jar`
-* or Google for a command to launch it as a Docker image
+* Launch local infrastructure `docker compose -f infrastructure-docker-compose.yml up`
+* Start this app
+* Start the [client app](https://github.com/KostyantynPanchenko/spring-boot-3-observability-demo-client)
+* Navigate to `http://localhost:3000` -> Dashboards -> Browse -> Logs, Trace, Metrics
+* Observe logs, traces and latency
+
+## Important
+Spring Boot 3.0.1 does not work the same way as 3.0.0 - you will not see the traces and logs in Grafana dashboard
+
 
 ### Useful Links
 
