@@ -1,5 +1,10 @@
 # Spring Boot 3 - The Playground
 
+## Do not forget
+Launch local instance of Zipkin
+* `java -jar zipkin.jar`
+* or Google for a command to launch it as a Docker image
+
 ### Useful Links
 
 * [Spring Boot 3.0 Goes GA](https://spring.io/blog/2022/11/24/spring-boot-3-0-goes-ga)
