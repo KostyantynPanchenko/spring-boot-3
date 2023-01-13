@@ -4,7 +4,7 @@ import com.example.springboot3.exception.AlbumNotFoundException;
 import com.example.springboot3.model.Album;
 import com.example.springboot3.repository.AlbumRepository;
 import com.example.springboot3.webclient.AlbumWebClient;
-import io.micrometer.observation.ObservationRegistry;
+import io.micrometer.observation.annotation.Observed;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,6 @@ public class AlbumService {
 
   private final AlbumWebClient webClient;
   private final AlbumRepository repository;
-  private final ObservationRegistry observationRegistry;
 
   @Transactional(readOnly = true)
   public List<Album> fetchAllFromRemoteOrigin() {
@@ -28,6 +27,9 @@ public class AlbumService {
     repository.saveAll(albums);
   }
 
+  @Observed(name = "album-service.get-album-by-id",
+      contextualName = "getting-album-by-id",
+      lowCardinalityKeyValues = {"albumId", "fakeAlbumId"})
   @Transactional(readOnly = true)
   public Album getAlbumById(final Integer id) {
     return repository.findById(id).orElseThrow(() -> new AlbumNotFoundException(id));
